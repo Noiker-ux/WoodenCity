@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f1e7d9;
+  --text: #685749;
+  --second: #c8b9a4;
+  --second-hover: rgb(168, 154, 134);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  @apply w-full bg-[var(--second)] text-[var(--text)] py-5;
+}
+
+.title {
+  @apply text-5xl font-bold text-[#B07C4A] break-words;
+}
+.link {
+  @apply underline hover:text-[var(--second-hover)] transition-all;
+}
+
+.arrowShow {
+  animation: arrowSick infinite 2s ease;
+}
+@keyframes arrowSick {
+  0% {
+    margin-top: 10px;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
