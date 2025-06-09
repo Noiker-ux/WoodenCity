@@ -2,13 +2,13 @@ export const people = [
   {
     name: "Николаев Дмитрий",
     role: "Генеральный директор",
-    imageUrl: "/Team/person1.jfif",
+    imageUrl: "/Team/person1.jpg",
     location: "Россия, Калининград",
   },
   {
     name: "Егоров Даниил",
     role: "Главный инженер",
-    imageUrl: "/Team/person2.jfif",
+    imageUrl: "/Team/person2.jpg",
     location: "Россия, Калининград",
   },
   {

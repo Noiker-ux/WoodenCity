@@ -18,7 +18,7 @@ export default function ContactsPage() {
         />
         <ContactCart
           data={{
-            imageUrl: "director_2.webp",
+            imageUrl: "director_2.jpg",
             role: "Заместитель директора",
             name: "Попов Макар Фёдорович",
             tel: "8 (4012) 538-523",
@@ -30,9 +30,7 @@ export default function ContactsPage() {
         <div className="bg-[#c9b59b] bg-opacity-20 py-5 px-3 rounded-xl w-full">
           <div className="flex gap-3 items-start">
             <FaCircleInfo size={30} />
-            <p className="text-2xl font-semibold">
-              Реквизиты строительной фирмы “WoodenCity”
-            </p>
+            <p className="text-2xl font-semibold">Реквизиты строительной фирмы “WoodenCity”</p>
           </div>
           <div className="flex flex-col gap-3 mt-2">
             <p>
@@ -42,8 +40,7 @@ export default function ContactsPage() {
               <b>Юридический адрес:</b> 236007, Калининград, ул. Дм. Донского, 1
             </p>
             <p>
-              <b>Фактический адрес:</b> 236002, г. Калининград, ул. Житомирская,
-              д. 8А, 4 (четвертый) этаж
+              <b>Фактический адрес:</b> 236002, г. Калининград, ул. Житомирская, д. 8А, 4 (четвертый) этаж
             </p>
             <p>
               <b>Электронный адрес:</b>{" "}
@@ -94,8 +91,8 @@ export default function ContactsPage() {
               <b>БИК:</b> 012748051
             </p>
             <p>
-              <b>Наименование банка:</b> ОТДЕЛЕНИЕ КАЛИНИНГРАД БАНКА РОССИИ//УФК
-              по Калининградской области, г. Калининград
+              <b>Наименование банка:</b> ОТДЕЛЕНИЕ КАЛИНИНГРАД БАНКА РОССИИ//УФК по Калининградской области, г.
+              Калининград
             </p>
             <p>
               <b>ОГРН:</b> 1183926043982

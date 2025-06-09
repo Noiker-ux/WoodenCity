@@ -28,7 +28,7 @@ export default function PortfolioPage() {
         />
         <Image
           className="w-full md:w-96 h-96 object-cover"
-          src={"/Jobs/4.jfif"}
+          src={"/Jobs/4.jpg"}
           alt="Object1"
           width={500}
           height={500}
