@@ -12,20 +12,11 @@ export default function Example() {
 
   return (
     <header className="relative z-20">
-      <nav
-        aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
-      >
+      <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image
-              src={"/logo.svg"}
-              width={270}
-              height={70}
-              alt="Логотип WoodenCity"
-              className="w-fit"
-            />
+            <Image src={"/logo.svg"} width={270} height={70} alt="Логотип WoodenCity" className="w-fit" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -54,22 +45,13 @@ export default function Example() {
         </div>
       </nav>
 
-      <Dialog
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-        className="lg:hidden"
-      >
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[var(--second)] px-6 py-6 sm:max-w-sm sm:ring-1 sm:text-white">
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <div className="fixed inset-0 z-50" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[var(--second)] px-6 py-6 sm:max-w-sm sm:ring-1 sm:text-white">
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">WoodenCity</span>
-              <Image
-                src={"/logoIcon.svg"}
-                width={50}
-                height={50}
-                alt="Логотип WoodenCity"
-              />
+              <Image src={"/logoIcon.svg"} width={50} height={50} alt="Логотип WoodenCity" />
             </Link>
             <button
               type="button"
@@ -88,6 +70,7 @@ export default function Example() {
                     key={item.name}
                     href={item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[var(--text)]"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
@@ -95,12 +78,7 @@ export default function Example() {
               </div>
               <div className="py-6 flex gap-5 text-[var(--text)]">
                 <p>Musik und Effekte</p>
-                <Image
-                  src={"/Header/musicIcon.png"}
-                  width={40}
-                  height={23}
-                  alt="Музыка"
-                />
+                <Image src={"/Header/musicIcon.png"} width={40} height={23} alt="Музыка" />
               </div>
             </div>
           </div>
