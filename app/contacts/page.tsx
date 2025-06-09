@@ -18,7 +18,7 @@ export default function ContactsPage() {
         />
         <ContactCart
           data={{
-            imageUrl: "director_2.jpg",
+            imageUrl: "dIrector_2.jpg",
             role: "Заместитель директора",
             name: "Попов Макар Фёдорович",
             tel: "8 (4012) 538-523",
